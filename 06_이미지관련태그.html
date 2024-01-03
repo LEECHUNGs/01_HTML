@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_이미지 관련 태그</title>
+</head>
+<body>
+    <h1>img 태그</h1>
+    <pre>
+        - 웹 문서에서 사진이나 그림 같은 이미지를 삽입하는 용도의 태그
+
+        [속성]
+        (속성 : 시작태그에 작성하는 내용)
+
+        1. src : 삽입할 이미지의 경로를 작성하는 속성
+                 (파일 위치, 인터넷 주소)
+        
+        2. width / height : 너비 / 높이를 지정하는 속성
+
+        3. alt (대안) : 이미지 설명을 작성하는 속성
+                    -> 이미지가 출력되지 않은 경우 화면에 출력됨
+                    + 웹 접근성(스크린 리더가 이미지 설명을 읽어줌)
+    </pre>
+
+    <h3>img 예시</h3>
+
+    <img src="https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/54Hg/image/PNCKmYNNTnldq2LJP6c8MzG_KS4.jpg" alt="히히">
+    
+    <hr><hr>
+
+    <h2>절대 경로로 이미지 출력하기</h2>
+    
+    <pre>
+        절대 경로 : 변하지 않는 기준점으로 부터 목표 까지의 경로
+    </pre>
+
+    <img src="C:\workspace\01_HTML\images\cats\cat1.jpg" alt="고먐미">
+    <!-- 컴퓨터 절대 경로는 라이브 서버로 확인이 불가 -->
+    
+    <hr><hr>
+
+    <h2>상대 경로로 이미지 출력하기</h2>
+
+    <pre>
+        상대 경로 : 현재 파일/ 페이지 위치를 기준으로 하여
+        목표 까지의 경로를 나타내는 것
+    
+        (오른쪽 뒤에 뒤에 뒤에 분한테 전달해줘)
+    </pre>
+
+    <img src="images/dogs/dog1.jpg" alt="dog.jpg 파일">
+
+    <hr><hr>
+
+    <h2>고정 크기 단위(px) : 항상 고정된 크기를 지님</h2>
+
+    <img src="images/cats/cat1.jpg" width="300px" height="200px">
+    <img src="images/cats/cat2.jpg" width="300px" height="200px">
+    <img src="images/cats/cat3.jpg" width="300px" height="200px">
+    <img src="images/cats/cat4.jpg" width="300px" height="200px">
+    <img src="images/cats/cat5.jpg" width="300px" height="200px">
+    
+    <hr><hr>
+
+    <h2>가변 크기 단위(%) : 화면 또는 영역에 대한 상대적인 크기 단위</h2>
+
+    <img src="images/dogs/dog1.jpg" width="15%" height="240px">
+    <img src="images/dogs/dog2.jpg" width="15%" height="240px">
+    <img src="images/dogs/dog3.jpg" width="15%" height="240px">
+    <img src="images/dogs/dog4.jpg" width="15%" height="240px">
+    <img src="images/dogs/dog5.jpg" width="15%" height="240px">
+
+    <hr><hr>
+
+    <h2>고정 + 가변 크기</h2>
+
+    <pre>
+        고정 크기로 설정된 요소(태그) 내부에서
+        일정한 크기의 이미지 또는 요소를 출력하고 싶을 때
+        가변 크기(%)를
+    </pre>
+
+    <div style="border: 1px solid black; width: 1200px; height: 300px; display: flex;">
+
+        <img src="images/flowers/flower1.jpg" width="25%" height="70%">
+        <img src="images/flowers/flower2.jpg" width="25%" height="70%">
+        <img src="images/flowers/flower3.jpg" width="25%" height="70%">
+        <img src="images/flowers/flower4.jpg" width="25%" height="70%">
+        
+    </div>
+
+
+    
+</body>
+</html>
